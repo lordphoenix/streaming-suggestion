@@ -33,10 +33,41 @@ def check_mentions(api, keywords, since_id, netflixIndia):
 def main():
     api = create_api()
     since_id = 1
-    f = open("NetflixIndia.txt","r")
-    netflixIndia = []
-    for x in f:
-        netflixIndia.append(x)
+    netflixIndia = ["Ghoul",
+    "Selection Day",
+    "Delhi Crime	Police procedural",
+    "Leila",
+    "Typewriter",
+    "Bard of Blood",
+    "Jamtara - Sabka Number Ayega",
+    "Taj Mahal 1989",
+    "She",
+    "Hasmukh",
+    "Betaal",
+    "Brij Mohan Amar Rahe",
+    "Bulbbul",
+    "Choked",
+    "Chopsticks",
+    "Drive",
+    "Ghost Stories",
+    "Guilty",
+    "Gunjan Saxena: The Kargil Girl",
+    "House Arrest",
+    "Jaoon Kahan Bata Ae Dil",
+    "Love per Square Foot",
+    "Lust Stories",
+    "Maska",
+    "Mrs. Serial Killer",
+    "Music Teacher",
+    "Once Again",
+    "Raat Akeli Hai",
+    "Rajma Chawal",
+    "Soni",
+    "Tikli and Laxmi Bomb",
+    "Tribhanga - Tedhi Medhi Crazy",
+    "Upstarts",
+    "What Are the Odds",
+    "Yeh Ballet"]
     while True:
         since_id = check_mentions(api, ["@netflixIndia"], since_id,netflixIndia)
         logger.info("Waiting...")
