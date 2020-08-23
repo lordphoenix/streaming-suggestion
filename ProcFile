@@ -1,1 +1,1 @@
-web: python3 bots/followfollowers.py
+worker: python bots/followfollowers.py
